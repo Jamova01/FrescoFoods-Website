@@ -28,9 +28,15 @@ export const Navbar = () => {
       {toggle && (
         <div className="flex flex-col justify-center items-center absolute w-full h-[50vh] top-16 transition bg-slate-100 shadow-lg">
           <ul className="uppercase text-center text-xl w-full">
-            <li className="block p-3 hover:text-orange-600 font-normal shadow-sm">home</li>
-            <li className="block p-3 hover:text-orange-600 font-normal shadow-sm">products</li>
-            <li className="block p-3 hover:text-orange-600 font-normal shadow-sm">guide</li>
+            <li className="block p-3 hover:text-orange-600 font-normal shadow-sm">
+              home
+            </li>
+            <li className="block p-3 hover:text-orange-600 font-normal shadow-sm">
+              products
+            </li>
+            <li className="block p-3 hover:text-orange-600 font-normal shadow-sm">
+              guide
+            </li>
           </ul>
         </div>
       )}
