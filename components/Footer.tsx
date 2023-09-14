@@ -3,7 +3,7 @@ export const Footer = () => {
 
   return (
     <footer
-      className="bg-[#669d35] p-4 text-white text-center font-semibold"
+      className="bg-[#A8D42E] p-4 text-white text-center font-semibold"
       style={{
         backgroundImage: 'url("/logo_v2.svg")',
         backgroundRepeat: "repeat-x",
