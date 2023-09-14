@@ -4,11 +4,12 @@ import { ProductCard } from "components/ProductCard";
 import { FrescoFoodsContext } from "context";
 
 export default function Products() {
-  const { state } = useContext(FrescoFoodsContext);
+  const frescoFoodsContext = useContext(FrescoFoodsContext);
+  const { state } = frescoFoodsContext || { state: { products: [] } };
 
   const [productTypes, setProductTypes] = useState({
     productTypes: [],
-    brandsForProductType: [],
+    brandsForProductType: [] as { name: string; logo_url: "" }[],
     selectedProductType: "",
     selectedBrand: "",
   });
@@ -29,10 +30,13 @@ export default function Products() {
     }
   };
 
-  const getBrandsForProductType = (productType) => {
-    const matchingProduct = productTypes.productTypes.find(
-      (product) => product.productType === productType
-    );
+  const getBrandsForProductType = (productType: string) => {
+    const matchingProduct = (
+      productTypes.productTypes as {
+        productType: string;
+        productBrands: [];
+      }[]
+    ).find((product) => product.productType === productType);
 
     const brands = matchingProduct ? matchingProduct.productBrands : [];
     return brands;
@@ -46,7 +50,11 @@ export default function Products() {
     <div className="m-5">
       <div className="flex flex-col md:flex-row gap-8 p-8">
         <div className="mb-4 flex flex-col md:flex-row  items-center space-x-2">
-          <label htmlFor="typeSelect" className="text-gray-600">
+          <label
+            htmlFor="typeSelect"
+            className="text-gray-600"
+            onClick={() => console.log(productTypes)}
+          >
             Filter by product type:
           </label>
           <select
@@ -66,11 +74,13 @@ export default function Products() {
             className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
           >
             <option value="">All</option>
-            {productTypes.productTypes?.map((item, index) => (
-              <option key={index} value={item.productType}>
-                {item.productType}
-              </option>
-            ))}
+            {productTypes.productTypes?.map(
+              (item: { productType: string }, index) => (
+                <option key={index} value={item.productType}>
+                  {item.productType}
+                </option>
+              )
+            )}
           </select>
         </div>
         <div className="mb-4 flex flex-col md:flex-row items-center space-x-2">

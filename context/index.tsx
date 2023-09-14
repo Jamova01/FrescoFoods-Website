@@ -4,7 +4,15 @@ import React, { createContext, useEffect, useReducer } from "react";
 import { collection, getDocs, DocumentData } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
 
-export const FrescoFoodsContext = createContext();
+type FrescoFoodsContextType = {
+  state: {
+    products: DocumentData[];
+  };
+};
+
+export const FrescoFoodsContext = createContext<
+  FrescoFoodsContextType | undefined
+>(undefined);
 
 const initialState = {
   products: [],
