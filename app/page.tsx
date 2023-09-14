@@ -51,7 +51,7 @@ export default function Page() {
               <Image src={flyer} alt="" objectFit="contain" layout="fill" />
             </div>
             <a
-              href="#"
+              href="public/FlyerAugust-September2023_FrescoFoods_compressed.pdf"
               download
               className="mt-2 inline-flex items-center h-9 px-4 bg-[#A8D42E] text-white font-semibold rounded-md"
             >
