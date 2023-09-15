@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import banner from "../public/banner_1.png";
 import flyer from "../public/flyer.png";
-import pruduct_guide from "../public/product_guie.png";
+import product_guide from "../public/product_guide.png";
 import products from "../public/products.png";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
@@ -66,9 +66,9 @@ export default function Page() {
             <Image
               src={products}
               alt="Products"
-              objectFit="cover" // Puedes ajustar esto según tu imagen
+              objectFit="cover"
               layout="responsive"
-              width={800} // Ajusta el tamaño de la imagen según tus necesidades
+              width={800}
               height={400}
             />
           </div>
@@ -104,11 +104,11 @@ export default function Page() {
             </p>
             <div className="w-full md:w-2/3 relative">
               <Image
-                src={pruduct_guide}
+                src={product_guide}
                 alt="Product Guide"
-                objectFit="cover" // Ajusta esto según tu imagen
+                objectFit="cover"
                 layout="responsive"
-                width={800} // Ajusta el tamaño de la imagen según tus necesidades
+                width={800}
                 height={400}
               />
             </div>
