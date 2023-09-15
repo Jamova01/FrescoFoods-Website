@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -34,7 +34,7 @@ export const Navbar = () => {
               home
             </li>
           </Link>
-          <Link href="#products-section">
+          <Link href="/products">
             <li
               className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer ${
                 pathname === "/products" ? "text-red-500" : ""
@@ -43,25 +43,31 @@ export const Navbar = () => {
               products
             </li>
           </Link>
-          <Link href="#product-guide-section">
+          {pathname !== "/products" && pathname !== "/how-to-buy" ? (
+            <Fragment>
+              <Link href="#product-guide-section">
+                <li
+                  className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+                >
+                  products guide
+                </li>
+              </Link>
+              <Link href="#contact-us-section">
+                <li
+                  className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+                >
+                  contact us
+                </li>
+              </Link>
+            </Fragment>
+          ) : null}
+          <Link href="/how-to-buy">
             <li
-              className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-            >
-              products guide
-            </li>
-          </Link>
-          <Link href="#">
-            <li
-              className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+              className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer ${
+                pathname === "/how-to-buy" ? "text-red-500" : ""
+              }`}
             >
               How to buy
-            </li>
-          </Link>
-          <Link href="#contact-us-section">
-            <li
-              className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-            >
-              contact us
             </li>
           </Link>
         </ul>
@@ -89,7 +95,7 @@ export const Navbar = () => {
                 home
               </li>
             </Link>
-            <Link href="#products-section">
+            <Link href="/products">
               <li
                 onClick={() => setToggle(!toggle)}
                 className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
@@ -97,28 +103,35 @@ export const Navbar = () => {
                 products
               </li>
             </Link>
-            <Link href="#product-guide-section">
+            {pathname !== "/products" && pathname !== "/how-to-buy" ? (
+              <Fragment>
+                <Link href="#product-guide-section">
+                  <li
+                    onClick={() => setToggle(!toggle)}
+                    className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+                  >
+                    products guide
+                  </li>
+                </Link>
+
+                <Link href="#contact-us-section">
+                  <li
+                    onClick={() => setToggle(!toggle)}
+                    className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+                  >
+                    contact us
+                  </li>
+                </Link>
+              </Fragment>
+            ) : null}
+            <Link href="/how-to-buy">
               <li
                 onClick={() => setToggle(!toggle)}
-                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-              >
-                products guide
-              </li>
-            </Link>
-            <Link href="#">
-              <li
-                onClick={() => setToggle(!toggle)}
-                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer ${
+                  pathname === "/how-to-buy" ? "text-red-500" : ""
+                }`}
               >
                 How to buy
-              </li>
-            </Link>
-            <Link href="#contact-us-section">
-              <li
-                onClick={() => setToggle(!toggle)}
-                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-              >
-                contact us
               </li>
             </Link>
           </ul>
