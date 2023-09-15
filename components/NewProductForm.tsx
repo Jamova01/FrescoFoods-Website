@@ -139,7 +139,7 @@ export const NewProductForm = () => {
           productDescription: "",
           flavors: [],
         }}
-        // validationSchema={validationSchema}
+        validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
         {({ values, handleChange }) => (
