@@ -51,7 +51,7 @@ export default function Page() {
               <Image src={flyer} alt="" objectFit="contain" layout="fill" />
             </div>
             <a
-              href="public/flyer_aug-sept.pdf"
+              href="/flyer_aug-sept.pdf"
               download
               className="mt-2 inline-flex items-center h-9 px-4 bg-[#A8D42E] text-white font-semibold rounded-md"
             >
@@ -113,7 +113,7 @@ export default function Page() {
               />
             </div>
             <a
-              href={"#"}
+              href="/Fresco Foods_New Customer_Registration Form_C.pdf"
               download
               className="mt-4 inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
