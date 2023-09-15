@@ -1,15 +1,13 @@
-// Definición de tipos para props
 interface StepCardProps {
   stepNumber: number;
   stepText: string;
   description: string;
-  buttonText1?: string; // Prop opcional
-  buttonLink1?: string; // Prop opcional
-  buttonText2?: string; // Prop opcional
-  buttonLink2?: string; // Prop opcional
+  buttonText1?: string;
+  buttonLink1?: string;
+  buttonText2?: string;
+  buttonLink2?: string;
 }
 
-// Componente reutilizable para cada paso
 export function StepCard({
   stepNumber,
   stepText,
