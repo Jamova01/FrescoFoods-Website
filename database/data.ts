@@ -7,11 +7,11 @@ const productData = [
         logo_url:
           "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389840/Fresco_Foods/brand_logos/KASS_v6du3g.png",
       },
-      {
-        name: "Aloevine",
-        logo_url:
-          "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389863/Fresco_Foods/brand_logos/Aloevine_Logo_sum991.png",
-      },
+      // {
+      //   name: "Aloevine",
+      //   logo_url:
+      //     "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389863/Fresco_Foods/brand_logos/Aloevine_Logo_sum991.png",
+      // },
       {
         name: "Electrolit",
         logo_url:
@@ -43,6 +43,14 @@ const productData = [
       {
         name: "Camaronazo",
         logo_url: "",
+      },
+      {
+        name: "Kuii",
+        logo_url: "",
+      },
+      {
+        name: "Suero Oral",
+        logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389859/Fresco_Foods/brand_logos/Suero_Oral_baetdz.png",
       },
     ],
   },
