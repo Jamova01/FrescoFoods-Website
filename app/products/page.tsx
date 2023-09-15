@@ -99,7 +99,7 @@ export default function Products() {
             value={productTypes.selectedBrand}
             className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
           >
-            <option value="">Todas</option>
+            <option value="">All</option>
             {productTypes.brandsForProductType.map((brand, index) => (
               <option key={index} value={brand.name}>
                 {brand.name}
