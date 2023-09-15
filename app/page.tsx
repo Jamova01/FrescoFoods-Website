@@ -77,22 +77,21 @@ export default function Page() {
               See all products
             </h2>
             <p className="text-lg mb-4 text-center md:text-left">
-              Descubre nuestra amplia gama de productos y servicios de alta
-              calidad.
+              Discover our wide range of high-quality products and services.
             </p>
 
             <button
               onClick={() => router.push("/products")}
               className="mt-2 inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
-              Ver todos los productos
+              View all products
             </button>
           </div>
         </div>
       </section>
       <section
         id="product-guide-section"
-        className="flex flex-col gap-8 px-5 py-10"
+        className="flex flex-col gap-2 px-5 py-10"
       >
         <h2 className="text-2xl text-center font-semibold capitalize">
           products guide
@@ -100,7 +99,7 @@ export default function Page() {
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center">
             <p className="text-center text-lg p-4">
-              Obtén acceso a nuestra Guía de Productos 2023
+              Get access to our 2023 Product Guide.
             </p>
             <div className="w-full md:w-2/3 relative">
               <Image
@@ -115,7 +114,7 @@ export default function Page() {
             <a
               href="/Special Flyer  2023_Fresco Foods_compressed.pdf"
               download
-              className="mt-4 inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
+              className="inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
