@@ -126,6 +126,7 @@ export default function Products() {
               productImage={product.productImage}
               productName={product.productName}
               description={product.productDescription}
+              flavors={product.flavors}
             />
           ))}
       </section>
