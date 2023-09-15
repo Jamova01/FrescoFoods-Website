@@ -20,7 +20,7 @@ export default function Page() {
     <div>
       <section id="banner-section" className="flex flex-col gap-4 px-5 py-10">
         <div className="w-full max-w-5xl mx-auto items-center xl:w-2/3">
-          <div className="overflow-hidden lg:rounded-main-lg ">
+          <div className="overflow-hidden lg:rounded-main-lg rounded-lg">
             <Swiper
               spaceBetween={10}
               centeredSlides={true}
@@ -44,6 +44,7 @@ export default function Page() {
             </Swiper>
           </div>
         </div>
+
         <div className="flex flex-col gap-3 my-4 text-center">
           <h3 className="text-xl font-semibold">Download our Monthly Flyer</h3>
           <div className="flex flex-col items-center">
@@ -53,7 +54,7 @@ export default function Page() {
             <a
               href="/Flyer August - September 2023_Fresco Foods_compressed.pdf"
               download
-              className="mt-2 inline-flex items-center h-9 px-4 bg-[#A8D42E] text-white font-semibold rounded-md"
+              className="mt-2 inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
               <ArrowDownTrayIcon className="w-5 h-5 mr-2" /> Download
             </a>
