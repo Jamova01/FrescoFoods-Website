@@ -131,7 +131,7 @@ export default function Page() {
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-              Descargar Guía
+              Download Guide
             </a>
           </div>
         </div>
