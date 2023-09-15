@@ -43,24 +43,20 @@ export const Navbar = () => {
               products
             </li>
           </Link>
-          {pathname !== "/products" && pathname !== "/how-to-buy" ? (
-            <Fragment>
-              <Link href="#product-guide-section">
-                <li
-                  className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-                >
-                  products guide
-                </li>
-              </Link>
-              <Link href="#contact-us-section">
-                <li
-                  className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-                >
-                  contact us
-                </li>
-              </Link>
-            </Fragment>
-          ) : null}
+          <Link href="/#contact-us-section">
+            <li
+              className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+            >
+              contact us
+            </li>
+          </Link>
+          <Link href="/#product-guide-section">
+            <li
+              className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+            >
+              products guide
+            </li>
+          </Link>
           <Link href="/how-to-buy">
             <li
               className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer ${
@@ -98,32 +94,29 @@ export const Navbar = () => {
             <Link href="/products">
               <li
                 onClick={() => setToggle(!toggle)}
-                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer ${
+                  pathname === "/products" ? "text-red-500" : ""
+                }`}
               >
                 products
               </li>
             </Link>
-            {pathname !== "/products" && pathname !== "/how-to-buy" ? (
-              <Fragment>
-                <Link href="#product-guide-section">
-                  <li
-                    onClick={() => setToggle(!toggle)}
-                    className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-                  >
-                    products guide
-                  </li>
-                </Link>
-
-                <Link href="#contact-us-section">
-                  <li
-                    onClick={() => setToggle(!toggle)}
-                    className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
-                  >
-                    contact us
-                  </li>
-                </Link>
-              </Fragment>
-            ) : null}
+            <Link href="/#product-guide-section">
+              <li
+                onClick={() => setToggle(!toggle)}
+                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+              >
+                products guide
+              </li>
+            </Link>
+            <Link href="/#contact-us-section">
+              <li
+                onClick={() => setToggle(!toggle)}
+                className={`block p-3 hover:text-orange-600 font-medium text-base cursor-pointer`}
+              >
+                contact us
+              </li>
+            </Link>
             <Link href="/how-to-buy">
               <li
                 onClick={() => setToggle(!toggle)}
