@@ -157,7 +157,7 @@ export default function Page() {
       <section id="contact-us-section" className="bg-white py-10">
         <div className="max-w-5xl mx-auto p-5">
           <h2 className="text-2xl font-semibold text-center mb-5">
-            Contact US
+            Contact Us
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div
