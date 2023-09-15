@@ -33,8 +33,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </div>
       <div className="w-52 h-52 relative m-auto">
         <div className="relative w-52 h-52">
-          {" "}
-          {/* Contenedor con tamaño fijo */}
           <Image src={productImage} alt="" objectFit="contain" layout="fill" />
         </div>
       </div>

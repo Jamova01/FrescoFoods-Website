@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={firaSans.className}>
-      <body>
+      <body className="min-h-screen flex flex-col justify-between">
         <header className="sticky top-0 z-10">
           <Navbar />
         </header>

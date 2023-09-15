@@ -47,7 +47,7 @@ export default function Page() {
         <div className="flex flex-col gap-3 my-4 text-center">
           <h3 className="text-xl font-semibold">Download our Monthly Flyer</h3>
           <div className="flex flex-col items-center">
-            <div className="w-96 h-52 relative">
+            <div className="w-80 h-52 relative">
               <Image src={flyer} alt="" objectFit="contain" layout="fill" />
             </div>
             <a
