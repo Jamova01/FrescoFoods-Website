@@ -14,7 +14,7 @@ interface FormValues {
 }
 
 interface ProductType {
-  product_type: string;
+  productType: string;
   productBrands: { name: string; logo_url: string }[];
 }
 
@@ -57,6 +57,7 @@ const BrandSelect = ({
 
 export const NewProductForm = () => {
   const [productTypes, setProductTypes] = useState<ProductType[]>([]);
+  const [flavors, setFlavors] = useState<string[]>([]);
 
   const fetchData = async () => {
     try {
@@ -74,7 +75,7 @@ export const NewProductForm = () => {
   const handleSubmit = async (values: FormValues, { resetForm }) => {
     try {
       const selectedBrand = productTypes
-        .find((item) => item.product_type === values.productType)
+        .find((item) => item.productType === values.productType)
         ?.productBrands.find((brand) => brand.name === values.productBrand);
 
       if (!selectedBrand) {
@@ -89,13 +90,34 @@ export const NewProductForm = () => {
         brandLogo: selectedBrand.logo_url,
         productImage: values.productImage,
         productDescription: values.productDescription,
+        flavors: flavors,
       });
 
       resetForm();
+      setFlavors([]);
       console.log("Document written with ID: ", docRef.id);
     } catch (error) {
       console.error("Error adding document: ", error);
     }
+  };
+
+  // Función para agregar un sabor a la lista
+  const addFlavor = (flavor: string) => {
+    setFlavors((prevFlavors) => [...prevFlavors, flavor]);
+  };
+
+  // Función para actualizar un sabor en la lista
+  const updateFlavor = (index: number, value: string) => {
+    const updatedFlavors = [...flavors];
+    updatedFlavors[index] = value;
+    setFlavors(updatedFlavors);
+  };
+
+  // Función para eliminar un sabor de la lista
+  const removeFlavor = (index: number) => {
+    const updatedFlavors = [...flavors];
+    updatedFlavors.splice(index, 1);
+    setFlavors(updatedFlavors);
   };
 
   useEffect(() => {
@@ -115,8 +137,9 @@ export const NewProductForm = () => {
           productBrand: "",
           productImage: "",
           productDescription: "",
+          flavors: [],
         }}
-        validationSchema={validationSchema}
+        // validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
         {({ values, handleChange }) => (
@@ -156,8 +179,8 @@ export const NewProductForm = () => {
                 >
                   <option value="">Select a product type</option>
                   {productTypes?.map((item: ProductType, index: number) => (
-                    <option key={index} value={item.product_type}>
-                      {item.product_type}
+                    <option key={index} value={item.productType}>
+                      {item.productType}
                     </option>
                   ))}
                 </Field>
@@ -177,7 +200,7 @@ export const NewProductForm = () => {
                 <BrandSelect
                   productBrands={
                     productTypes.find(
-                      (item) => item.product_type === values.productType
+                      (item) => item.productType === values.productType
                     )?.productBrands || []
                   }
                   onChange={(brand: string) => {
@@ -192,6 +215,46 @@ export const NewProductForm = () => {
                   className="text-red-600 text-sm"
                 />
               </div>
+              <div className="mb-4">
+                <button
+                  type="button"
+                  onClick={() => addFlavor("")}
+                  className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+                >
+                  Add Flavor
+                </button>
+              </div>
+              {flavors.map((flavor, index) => (
+                <div key={index} className="mb-4">
+                  <label
+                    htmlFor={`flavor_${index}`}
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Flavor {index + 1}
+                  </label>
+                  <div className="flex">
+                    <Field
+                      type="text"
+                      id={`flavor_${index}`}
+                      name={`flavors[${index}]`}
+                      className="mt-1 p-2 w-full border rounded-md"
+                      onChange={(e) => updateFlavor(index, e.target.value)} // Actualiza el sabor en el estado
+                    />
+                    <button
+                      type="button"
+                      onClick={() => removeFlavor(index)}
+                      className="ml-2 text-red-500 hover:text-red-700"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                  <ErrorMessage
+                    name={`flavors[${index}]`}
+                    component="div"
+                    className="text-red-600 text-sm"
+                  />
+                </div>
+              ))}
             </div>
             <div>
               <div className="mb-4">
@@ -234,7 +297,6 @@ export const NewProductForm = () => {
                 />
               </div>
             </div>
-
             <div className="mb-4">
               <button
                 type="submit"
