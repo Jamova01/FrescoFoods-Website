@@ -26,7 +26,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
     <article className="flex flex-col bg-white rounded-lg shadow-md p-4 w-80 h-auto">
-      <div className="w-12 h-12 relative self-end">
+      <div className="w-24 h-16 relative self-end">
         {logo !== "" && (
           <Image src={logo} alt="" objectFit="contain" layout="fill" />
         )}
