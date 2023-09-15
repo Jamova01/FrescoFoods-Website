@@ -40,7 +40,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </div>
       <div>
         <h3 className="text-base font-medium">{productName}</h3>
-        <p className="text-gray-600 mt-2">{description}</p>
+        <p className="text-gray-600 mt-2 text-sm">{description}</p>
         {flavors?.length == 0 ? null : (
           <Fragment>
             <p className="text-sm">Flavors:</p>
