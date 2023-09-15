@@ -1,17 +1,34 @@
 "use client";
 import Image from "next/image";
+
+// import Swiper core and required modules
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
-import banner from "../public/banner.png";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 import flyer from "../public/flyer.png";
 import product_guide from "../public/product_guide.png";
 import products from "../public/products.png";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
 
-const images = [1, 2, 3, 4, 5];
+const images = [
+  "https://res.cloudinary.com/dppyvfxef/image/upload/v1694815730/Fresco_Foods/banners/image_1.png",
+  "https://res.cloudinary.com/dppyvfxef/image/upload/v1694815662/Fresco_Foods/banners/image_2.png",
+  "https://res.cloudinary.com/dppyvfxef/image/upload/v1694815709/Fresco_Foods/banners/image_3.png",
+];
 
 export default function Page() {
   const router = useRouter();
@@ -22,22 +39,23 @@ export default function Page() {
         <div className="w-full max-w-5xl mx-auto items-center xl:w-2/3">
           <div className="overflow-hidden lg:rounded-main-lg rounded-lg">
             <Swiper
-              spaceBetween={10}
-              centeredSlides={true}
-              autoplay={{
-                delay: 5500,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
+              slidesPerView={1}
+              speed={5000}
+              modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              loop={true}
+              spaceBetween={50}
               navigation={true}
+              pagination={{ dynamicBullets: true }}
+              scrollbar={{ draggable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
             >
               {images?.length > 0 &&
                 images.map((image, index) => {
                   return (
                     <SwiperSlide key={index}>
-                      <Image src={banner} alt="" objectFit="contain" />
+                      <img src={image} alt="" width={1000} className="m-auto" />
                     </SwiperSlide>
                   );
                 })}
