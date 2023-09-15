@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import banner from "../public/banner_1.png";
+import banner from "../public/banner.png";
 import flyer from "../public/flyer.png";
 import product_guide from "../public/product_guide.png";
 import products from "../public/products.png";
