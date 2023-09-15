@@ -27,6 +27,23 @@ const productData = [
         logo_url:
           "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389852/Fresco_Foods/brand_logos/fruti_king_logo_grfl5q.png",
       },
+      {
+        name: "Delicias",
+        logo_url: "",
+      },
+      {
+        name: "OKF",
+        logo_url: "",
+      },
+      {
+        name: "Clamato",
+        logo_url:
+          "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389834/Fresco_Foods/brand_logos/clamato-logo-large_wl7lb1.png",
+      },
+      {
+        name: "Camaronazo",
+        logo_url: "",
+      },
     ],
   },
   {
