@@ -101,19 +101,16 @@ export const NewProductForm = () => {
     }
   };
 
-  // Función para agregar un sabor a la lista
   const addFlavor = (flavor: string) => {
     setFlavors((prevFlavors) => [...prevFlavors, flavor]);
   };
 
-  // Función para actualizar un sabor en la lista
   const updateFlavor = (index: number, value: string) => {
     const updatedFlavors = [...flavors];
     updatedFlavors[index] = value;
     setFlavors(updatedFlavors);
   };
 
-  // Función para eliminar un sabor de la lista
   const removeFlavor = (index: number) => {
     const updatedFlavors = [...flavors];
     updatedFlavors.splice(index, 1);
@@ -126,7 +123,6 @@ export const NewProductForm = () => {
 
   return (
     <div
-      // className="max-w-md mx-auto mt-5 p-4 border rounded-lg shadow-lg"
       className="w-4/5 m-auto p-4 border rounded-lg shadow-lg"
     >
       <h1 className="text-2xl font-semibold mb-4">Add Product</h1>
