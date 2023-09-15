@@ -16,11 +16,11 @@ export default function HowToBuy() {
           stepText="Download the PDF forms"
           description="Click below to download the necessary PDF forms."
           buttonText1="Download PDF 1"
-          buttonLink1="/pdf-forms-1.pdf"
+          buttonLink1="/Fresco Foods_ACH_Authorization Form_P.pdf"
           buttonText2="Download PDF 2"
-          buttonLink2="/pdf-forms-2.pdf"
+          buttonLink2="/Fresco Foods_New Customer_Registration Form_C.pdf"
           buttonText3="Download PDF 3"
-          buttonLink3="/pdf-forms-3.pdf"
+          buttonLink3="/st3.pdf"
         />
         <StepCard
           stepNumber={2}

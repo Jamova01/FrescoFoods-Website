@@ -33,6 +33,7 @@ export function StepCard({
           <a
             href={buttonLink1}
             target="_blank"
+            download
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition duration-300"
           >
@@ -43,6 +44,7 @@ export function StepCard({
           <a
             href={buttonLink2}
             target="_blank"
+            download
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-300"
           >
@@ -53,6 +55,7 @@ export function StepCard({
           <a
             href={buttonLink3}
             target="_blank"
+            download
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition duration-300"
           >
