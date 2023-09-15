@@ -51,7 +51,7 @@ export default function Page() {
               <Image src={flyer} alt="" objectFit="contain" layout="fill" />
             </div>
             <a
-              href="/Flyer August - September 2023_Fresco Foods.pdf"
+              href="/Flyer August - September 2023_Fresco Foods_compressed.pdf"
               download
               className="mt-2 inline-flex items-center h-9 px-4 bg-[#A8D42E] text-white font-semibold rounded-md"
             >
@@ -113,7 +113,7 @@ export default function Page() {
               />
             </div>
             <a
-              href="/Special Flyer  2023_Fresco Foods.pdf"
+              href="/Special Flyer  2023_Fresco Foods_compressed.pdf"
               download
               className="mt-4 inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
