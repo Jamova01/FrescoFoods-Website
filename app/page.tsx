@@ -78,7 +78,7 @@ export default function Page() {
               See all products
             </h2>
             <p className="text-lg mb-4 text-center md:text-left">
-              Discover our wide range of high-quality products and services.
+              Discover our wide range of high-quality products.
             </p>
 
             <button
