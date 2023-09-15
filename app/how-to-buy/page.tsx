@@ -19,6 +19,8 @@ export default function HowToBuy() {
           buttonLink1="/pdf-forms-1.pdf"
           buttonText2="Download PDF 2"
           buttonLink2="/pdf-forms-2.pdf"
+          buttonText3="Download PDF 3"
+          buttonLink3="/pdf-forms-3.pdf"
         />
         <StepCard
           stepNumber={2}
