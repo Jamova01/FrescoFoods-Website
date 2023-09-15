@@ -67,7 +67,7 @@ export default function Products() {
                 ...prevState,
                 brandsForProductType: brandsForProductType,
                 selectedProductType: value,
-                selectedBrand: "", // Reset selected brand when changing product type
+                selectedBrand: "",
               }));
             }}
             value={productTypes.selectedProductType}
@@ -111,7 +111,6 @@ export default function Products() {
       <section className="flex flex-wrap justify-center gap-5 p-8">
         {state.products
           ?.filter((product) => {
-            // Filter products based on selected product type and brand
             return (
               (!productTypes.selectedProductType ||
                 product.productType === productTypes.selectedProductType) &&
