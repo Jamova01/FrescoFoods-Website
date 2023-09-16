@@ -40,9 +40,9 @@ export default function Page() {
           <div className="overflow-hidden lg:rounded-main-lg rounded-lg">
             <Swiper
               slidesPerView={1}
-              speed={5000}
+              speed={400}
               modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
               navigation={false}
               loop={true}
               spaceBetween={50}
