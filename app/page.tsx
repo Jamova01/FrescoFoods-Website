@@ -43,9 +43,9 @@ export default function Page() {
               speed={5000}
               modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
               autoplay={{ delay: 1000, disableOnInteraction: false }}
+              navigation={false}
               loop={true}
               spaceBetween={50}
-              navigation={true}
               pagination={{ dynamicBullets: true }}
               scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
