@@ -25,7 +25,7 @@ import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
 
 const images = [
-  "https://res.cloudinary.com/dppyvfxef/image/upload/v1695949516/Fresco_Foods/banners/image_1.png",
+  "https://res.cloudinary.com/dppyvfxef/image/upload/v1694815709/Fresco_Foods/banners/image_3.png",
   "https://res.cloudinary.com/dppyvfxef/image/upload/v1694815662/Fresco_Foods/banners/image_2.png",
   "https://res.cloudinary.com/dppyvfxef/image/upload/v1698851225/Fresco_Foods/banners/autumn-banners/image_2.png",
   "https://res.cloudinary.com/dppyvfxef/image/upload/v1698851221/Fresco_Foods/banners/autumn-banners/image_3.png",
