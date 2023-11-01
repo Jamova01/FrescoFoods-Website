@@ -69,14 +69,21 @@ export default function Page() {
 
         <div className="flex flex-col gap-3 my-4 text-center">
           <h3 className="text-xl font-semibold">Download our Monthly Flyer</h3>
-          <div className="flex flex-col items-center">
-            <div className="w-80 h-52 relative">
-              <Image src={flyer} alt="" objectFit="contain" layout="fill" />
+          <div className="flex flex-col items-center gap-6">
+            <div className="w-2/3 md:w-1/3 relative">
+              <Image
+                src={flyer}
+                alt=""
+                objectFit="cover"
+                layout="responsive"
+                width={800}
+                height={400}
+              />
             </div>
             <a
               href="/Flyer_November_Fresco_Foods_Online.pdf"
               download
-              className="mt-2 inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
+              className="inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
               <ArrowDownTrayIcon className="w-5 h-5 mr-2" /> Download
             </a>
