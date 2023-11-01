@@ -74,7 +74,7 @@ export default function Page() {
               <Image src={flyer} alt="" objectFit="contain" layout="fill" />
             </div>
             <a
-              href="/Flyer_October_2023_Fresco_Foods_Online.pdf"
+              href="/Flyer_November_Fresco_Foods_Online.pdf"
               download
               className="mt-2 inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
