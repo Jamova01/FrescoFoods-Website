@@ -7,11 +7,6 @@ const productData = [
         logo_url:
           "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389840/Fresco_Foods/brand_logos/KASS_v6du3g.png",
       },
-      // {
-      //   name: "Aloevine",
-      //   logo_url:
-      //     "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389863/Fresco_Foods/brand_logos/Aloevine_Logo_sum991.png",
-      // },
       {
         name: "Electrolit",
         logo_url:
@@ -50,7 +45,8 @@ const productData = [
       },
       {
         name: "Suero Oral",
-        logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389859/Fresco_Foods/brand_logos/Suero_Oral_baetdz.png",
+        logo_url:
+          "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389859/Fresco_Foods/brand_logos/Suero_Oral_baetdz.png",
       },
     ],
   },
@@ -121,12 +117,83 @@ const productData = [
       },
     ],
   },
-  // {
-  //   productType: "Snacks - Tostadas",
-  //   productBrands: [
-  //     { name: "", logo_url: "" },
-  //   ],
-  // },
+  {
+    productType: "Snacks - Tostadas",
+    productBrands: [
+      { name: "Totis", logo_url: "" },
+      { name: "Gamesa", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389813/Fresco_Foods/brand_logos/Gamesa_Logo_jpeg_ukuc7f.jpg" },
+      { name: "Moderna", logo_url: "" },
+      { name: "Chikys", logo_url: "" },
+      { name: "Noel", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389855/Fresco_Foods/brand_logos/LOGO-MARCA-NOEL_aaaptg.png" },
+      { name: "Rio Grande", logo_url: "" },
+      { name: "Sabritas", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389820/Fresco_Foods/brand_logos/Logo_Sabritas_tosj43.png" },
+      { name: "Nabisco", logo_url: "" },
+      { name: "Manzela", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389868/Fresco_Foods/brand_logos/Manzela_Logo_dfp4bu.png" },
+      { name: "Tajin", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389847/Fresco_Foods/brand_logos/Logo-Tajin-borde_cg7bi1.png" },
+      { name: "De La Rosa", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389829/Fresco_Foods/brand_logos/dulces-de-la-rosa_marca_cfscdb.png" },
+      { name: "Charras", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389801/Fresco_Foods/brand_logos/tostadas-charras_logo_mbqfnj.png" },
+      { name: "Los Pericos", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389795/Fresco_Foods/brand_logos/Los_Pericos_Logo_czqkfd.jpg" },
+      { name: "Pringles", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389845/Fresco_Foods/brand_logos/Pringles-Logo-2020_g28mxf.png" },
+    ],
+  },
+  {
+    productType: "Grains",
+    productBrands: [
+      { name: "Brown Best", logo_url: "" },
+      { name: "Verde Valle", logo_url: "" },
+      { name: "La Preferida", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389847/Fresco_Foods/brand_logos/La_Preferida_logo_rhm246.jpg" },
+      { name: "Rio Grande", logo_url: "" },
+      { name: "Super Lucky Elephant", logo_url: "" },
+    ],
+  },
+  {
+    productType: "Sopas-Pastas",
+    productBrands: [
+      { name: "La Moderna", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389862/Fresco_Foods/brand_logos/La_Moderna_Logo_br0d0k.png" },
+      { name: "Maruchan", logo_url: "" },
+      { name: "Tapatio", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389822/Fresco_Foods/brand_logos/La-salsa-picante-Tapatio_tc60lv.png" },
+      { name: "Knorr", logo_url: "" },
+      { name: "Cielo", logo_url: "" },
+    ],
+  },
+  {
+    productType: "Candy",
+    productBrands: [
+      { name: "Lorena", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389858/Fresco_Foods/brand_logos/logolorena1_1920x_h9szrz.png" },
+      { name: "Lucas", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389872/Fresco_Foods/brand_logos/Lucas_Logo_at1ftt.png" },
+      { name: "Jet", logo_url: "" },
+      { name: "Vero", logo_url: "" },
+      { name: "Tamaroca  Palebola Bag", logo_url: "" },
+      { name: "Koko", logo_url: "" },
+      { name: "De La Rosa", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389829/Fresco_Foods/brand_logos/dulces-de-la-rosa_marca_cfscdb.png" },
+      { name: "m&ms", logo_url: "" },
+      { name: "snickers", logo_url: "" },
+    ],
+  },
+  {
+    productType: "Cleaning",
+    productBrands: [
+      { name: "Pinalen", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389832/Fresco_Foods/brand_logos/Pinalen-Logo_la3zkh.png" },
+      { name: "Fabuloso", logo_url: "" },
+      { name: "Easy-Off", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389825/Fresco_Foods/brand_logos/easy_off_Logo_frnqi1.png" },
+      { name: "Cloralen", logo_url: "" },
+      { name: "Ariel", logo_url: "" },
+      { name: "Foca", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389811/Fresco_Foods/brand_logos/Foca_pjshi0.jpg" },
+      { name: "Roma", logo_url: "" },
+      { name: "Gain", logo_url: "" },
+      { name: "Tide", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389823/Fresco_Foods/brand_logos/Tide-logo_tywiti.png" },
+      { name: "Xtra", logo_url: "" },
+      { name: "Ensueno", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389818/Fresco_Foods/brand_logos/Ensue%C3%B1o_Logo_ysof7e.png" },
+      { name: "Ajax", logo_url: "" },
+      { name: "Palmolive", logo_url: "https://res.cloudinary.com/dppyvfxef/image/upload/v1694389791/Fresco_Foods/brand_logos/Palmolive_logo_s7vb9y.png" },
+      { name: "Vel Rosita", logo_url: "" },
+      { name: "Suavitel", logo_url: "" },
+      { name: "Zote", logo_url: "" },
+      { name: "Netsi", logo_url: "" },
+      { name: "Clorox", logo_url: "" },
+      { name: "123 Detergente", logo_url: "" },
+    ],
+  },
 ];
 
 export default productData;
