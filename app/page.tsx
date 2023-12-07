@@ -81,7 +81,7 @@ export default function Page() {
               />
             </div>
             <a
-              href="/Flyer_November_Fresco_Foods_Online.pdf"
+              href="/Flyer_December_2023_Fresco_Foods_Online_2.pdf"
               download
               className="inline-flex items-center px-6 py-3 bg-[#A8D42E] text-white font-semibold rounded-md capitalize hover:bg-green-600 transition duration-300"
             >
