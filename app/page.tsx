@@ -206,7 +206,7 @@ export default function Page() {
               <p>Juana Ascencio</p>
               <p>Mobile: (612) 462 2521</p>
               <p>
-                Email:
+                Email:{" "}
                 <a href="mailto:contact@frescofoodsmn.com">
                   a.juanita@frescofoodsmn.com
                 </a>
