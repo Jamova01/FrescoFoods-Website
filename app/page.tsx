@@ -198,6 +198,20 @@ export default function Page() {
                 </a>
               </p>
             </div>
+            <div
+              id="managing-director"
+              className="bg-gray-100 rounded-lg shadow-md p-4"
+            >
+              <h3 className="text-lg font-semibold">Sales Representative</h3>
+              <p>Juana Ascencio</p>
+              <p>Mobile: (612) 462 2521</p>
+              <p>
+                Email:
+                <a href="mailto:contact@frescofoodsmn.com">
+                  a.juanita@frescofoodsmn.com
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
